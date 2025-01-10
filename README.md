@@ -1,0 +1,2 @@
+# ProyectoRDiabetica
+Proyecto de IA
