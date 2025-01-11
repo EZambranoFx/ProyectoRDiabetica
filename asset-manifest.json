@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ProyectoRDiabetica/static/css/main.28254999.css",
+    "main.js": "/ProyectoRDiabetica/static/js/main.6c951462.js",
+    "static/js/488.97dce915.chunk.js": "/ProyectoRDiabetica/static/js/488.97dce915.chunk.js",
+    "index.html": "/ProyectoRDiabetica/index.html",
+    "main.28254999.css.map": "/ProyectoRDiabetica/static/css/main.28254999.css.map",
+    "main.6c951462.js.map": "/ProyectoRDiabetica/static/js/main.6c951462.js.map",
+    "488.97dce915.chunk.js.map": "/ProyectoRDiabetica/static/js/488.97dce915.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28254999.css",
+    "static/js/main.6c951462.js"
+  ]
+}
