@@ -12,6 +12,7 @@ function App() {
   });
   const [image, setImage] = useState(null);
   const [result, setResult] = useState('');
+  const [showModal, setShowModal] = useState(false); // Estado para controlar el modal
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -47,10 +48,15 @@ function App() {
     }
 
     setResult('Análisis completado: Grado leve de retinopatía.');
+    setShowModal(true); // Mostrar el modal con el resultado
   };
 
   const handleGenerateReport = () => {
     alert('Función "Generar Reporte" en desarrollo.');
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
   };
 
   return (
@@ -135,16 +141,19 @@ function App() {
               <button onClick={handleAnalyze} className="primary-button">Analizar Imagen</button>
               <button onClick={handleGenerateReport} className="secondary-button">Generar Reporte</button>
             </div>
+            <br></br>
+            <button onClick={handleBack} className="secondary-button back-button">Regresar</button>
+          </div>
+        )}
 
-            {result && (
-              <div className="result">
-                <h2>Resultado del Análisis:</h2>
-                <p>{result}</p>
-              </div>
-            )}
-            {
-              <button onClick={handleBack} className="secondary-button back-button">Regresar</button>
-            }
+        {/* Modal */}
+        {showModal && (
+          <div className="modal-overlay">
+            <div className="modal">
+              <h2>Resultado del Análisis</h2>
+              <p>{result}</p>
+              <button onClick={closeModal} className="close-button">Cerrar</button>
+            </div>
           </div>
         )}
       </main>
